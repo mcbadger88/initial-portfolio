@@ -1,0 +1,90 @@
+. {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Neue Haas Grotesk W01 Disp', Helvetica, sans-serif;
+    font-family: lato, sans-serif;
+    /* color: #333735; */
+    color: #393d3b;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(1rem + 1vw), 1fr));
+    grid-auto-rows: calc(1rem + 2vw);
+    grid-gap: 5px;
+    grid-auto-flow: dense;
+}
+
+.four {
+    /* background-color: rgb(239, 201, 248); */
+    background-color: rgb(252, 241, 255);
+    clip-path: polygon(0% 0%, 100% 3%, 98% 99%, 3% 93%);
+}
+
+
+/* img {
+    width: 150%;
+} */
+
+.one {
+    diplay: flex;
+    /* background-color: rgb(253, 246, 249); */
+    background-color: rgb(248, 244, 246);
+    clip-path: polygon(0% 0%, 100% 3%, 98% 99%, 3% 93%);
+}
+
+
+
+
+.two {
+    /* background-color: rgb(209, 248, 234); */
+    background-color: rgb(238, 252, 247);
+    clip-path: polygon(0% 0%, 100% 3%, 98% 99%, 3% 93%);
+    /* grid-column: span 2; */
+}
+
+.three {
+    /* background-color: rgb(219, 219, 219); */
+    background-color: rgb(243, 243, 243);
+    clip-path: polygon(0% 0%, 100% 3%, 98% 99%, 3% 93%);
+    /* grid-column: span 3; */
+}
+
+.five {
+    clip-path: polygon(0% 0%, 100% 3%, 98% 99%, 3% 93%);
+    /* background-image: url("image.jpg");
+    background-size: 150%; */
+    /* grid-column: span 2;
+    grid-row: span 2; */
+}
+
+.name {
+    /* position: fixed; */
+    /* grid-column: -1 / -8; */
+    grid-column: 4 / 20;
+    grid-row: 3 / 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 107.5px;
+    left: 20%;
+    font-size: calc(2rem + 3vw);
+    z-index: 8;
+
+    font-weight: bolder;
+    letter-spacing: -0.04em;
+    line-height: 0.65;
+    text-size-adjust: 100%;
+}
+
+.name div:nth-of-type(2) {
+    font-size: calc(0.25rem + 3vw);
+    text-align: right;
+}
+
+.name div:nth-of-type(3) {
+    font-size: calc(0.25rem + 3vw);
+    text-align: right;
+}
